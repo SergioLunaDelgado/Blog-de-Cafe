@@ -1,0 +1,75 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header {
+    z-index: 1;
+    padding: 3rem;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    @include m.tablet {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5rem;
+        transition: padding 300ms ease-in-out;
+    }
+
+    &--dark {
+        background-color: v.$negro;
+    }
+
+    // &__logo {
+    //     display: flex;
+    //     align-items: center;
+    //     margin-left: -1rem; /* el svg da la impresion que hay mas espacio a la izquierda y que no esta centrado, por eso corrigo eso */
+    // }
+
+    // &__imagen {
+    //     width: 10rem;
+    // }
+
+    &__heading {
+        font-size: 4rem;
+        margin: 0;
+        color: v.$blanco;
+        letter-spacing: 0.2rem;
+    }
+
+    &__enlace {
+        color: v.$blanco;
+
+        &:hover {
+            color: darken(v.$blanco, $amount: 20);
+        }
+    }
+
+    &__mobile {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+
+        @include m.tablet {
+            display: none;
+        }
+    }
+
+    &__tablet {
+        display: none;
+
+        @include m.tablet {
+            display: flex;
+            gap: 2rem;
+        }
+    }
+
+    /* lo mando a llamar desde app.js */
+    &--moved {
+        background-color: rgb(0 0 0 / 0.75);
+        padding: 3rem;
+    }
+}

@@ -1,0 +1,21 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+h1, h2{
+    font-family: v.$fuenteHeading;
+}
+
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+
+[class$="__heading"] {
+    font-family: v.$fuenteHeading;
+}
+
+[class$="__span"] {
+    color: v.$primario;
+}

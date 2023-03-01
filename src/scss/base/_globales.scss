@@ -1,0 +1,40 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 10px = 1rem */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: v.$fuenteParrafos;
+    font-size: 1.6rem;
+    min-height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    @include m.contenedor;
+}
+
+.mt {
+    margin-top: 25rem;
+
+    @include m.tablet {
+        margin-top: 18rem
+    }
+}

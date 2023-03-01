@@ -1,0 +1,81 @@
+@use 'base/variables' as v;
+
+/* Media Queries */
+@mixin telefono {
+    @media (min-width: v.$telefono) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: v.$desktop) {
+        @content;
+    }
+}
+
+
+@mixin boton($bgColor, $colorTexto) {
+    background-color: $bgColor;
+    padding: 1.5rem 4rem;
+    color: $colorTexto;
+    font-size: 1.6rem;
+    display: inline-block;
+    font-weight: 700;
+    border: none;
+    transition-property: background-color;
+    transition-duration: .3s;
+    text-align: center;
+    display: block;
+    width: 100%;
+
+    @include tablet {
+        width: auto;
+    }
+
+    &:hover {
+        background-color: darken($bgColor, 10%);
+        cursor: pointer;
+    }
+}
+
+@mixin grid($columnas, $espaciado ) {
+    display: grid;
+    gap: $espaciado;
+    grid-template-columns: repeat($columnas, 1fr);
+}
+
+@mixin contenedor {
+    width: min(95%, 120rem);
+    margin: 0 auto;
+}
+
+@mixin contenedor-md {
+    width: min(90%, 80rem);
+    margin: 0 auto;
+}
+
+@mixin contenedor-sm {
+    width: min(85%, 60rem);
+    margin: 0 auto;
+}
+
+@mixin texto-fluido($min, $max) {
+    font-size: clamp($min, -0.8rem + 10vw, $max);
+}
+
+@mixin shadow {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    /* #13 https://getcssscan.com/css-box-shadow-examples */
+}
+
+@mixin reset-lista {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

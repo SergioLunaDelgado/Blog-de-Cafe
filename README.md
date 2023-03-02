@@ -14,23 +14,24 @@ Nuestro objetivo es proveer a los aficionados y expertos en el café una platafo
 2. Ejecutar en la terminal gulp para convertir y comprimir imagenes: `npx gulp conversor`
 
 # Todolist
-- Home
-[x] Header
-[x] Hero
-[ ] Bienvenida
-[ ] Galeria
-[ ] Entradas del blog (solo 3)
-[ ] Entradas de cursos (solo 3)
-[ ] Formulario
-[x] Footer
-- Nosotros
-[ ] Imagen | Información
-- Galeria
-[ ] Fotos | Videos
-- Blog
-[ ] Entradas de post organizado por etiquetas
-- Cursos
-[ ] Cards (imagen, titulo, precio, cupo, breve descripcion, btn)
+## Inicio
+* [x] Header
+* [x] Hero
+* [ ] Bienvenida
+* [ ] Galeria
+* [ ] Entradas del blog (solo 3)
+* [ ] Entradas de cursos (solo 3)
+* [ ] Formulario
+* [x] Footer
+## Nosotros
+* [ ] Imagen | Información
+## Galeria
+* [ ] Fotos | Videos
+## Blog
+* [ ] Entradas de post organizado por etiquetas
+## Suscríbete
+* [ ] Formulario
 
 # Commits
 * 1/3/2023 = Header, Hero and Footer
+* 2/3/2023 = Nosotros

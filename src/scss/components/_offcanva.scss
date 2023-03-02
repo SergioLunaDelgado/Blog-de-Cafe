@@ -50,5 +50,10 @@
         &:hover {
             color: darken(v.$blanco, $amount: 20);
         }
+
+        &--actual {
+            color: v.$primario;
+            font-weight: v.$bold;
+        }
     }
 }

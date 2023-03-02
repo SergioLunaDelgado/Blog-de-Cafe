@@ -17,8 +17,6 @@
     <!--CSS -->
     <link rel="preload" href="/build/css/app.css" as="style">
     <link rel="stylesheet" href="/build/css/app.css">
-    <!-- Cargar una imagen rapido -->
-    <!-- <link rel="preload" href="build/img/me.avif" as="image"> -->
 </head>
 
 <body>
@@ -33,10 +31,10 @@
         </div>
         <nav class="header__tablet">
             <a href="/" class="header__enlace">Inicio</a>
-            <a href="/nosotros.html" class="header__enlace">Nosotros</a>
-            <a href="/galeria.html" class="header__enlace">Galeria</a>
+            <a href="/nosotros.html" class="header__enlace header__enlace--actual">Nosotros</a>
+            <a href="/galeria.html" class="header__enlace">Galería</a>
             <a href="/blog.html" class="header__enlace">Blog</a>
-            <a href="/cursos.html" class="header__enlace">Cursos</a>
+            <a href="/suscribete.html" class="header__enlace">Suscríbete</a>
         </nav>
     </header>
 
@@ -46,18 +44,44 @@
         </div>
         <div class="offcanva__contenedor">
             <a href="/" class="offcanva__enlace">Inicio</a>
-            <a href="/nosotros.html" class="offcanva__enlace">Nosotros</a>
-            <a href="/galeria.html" class="offcanva__enlace">Galeria</a>
+            <a href="/nosotros.html" class="offcanva__enlace offcanva__enlace--actual">Nosotros</a>
+            <a href="/galeria.html" class="offcanva__enlace">Galería</a>
             <a href="/blog.html" class="offcanva__enlace">Blog</a>
-            <a href="/cursos.html" class="offcanva__enlace">Cursos</a>
+            <a href="/suscribete.html" class="offcanva__enlace">Suscríbete</a>
         </div>
     </div>
 
-    <section class="mt">
-        <h1>desde nosotros</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rem molestiae repellendus ipsa maiores harum sit id accusantium saepe, quam aliquid tempore a consectetur? At architecto a amet in aliquid.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rem molestiae repellendus ipsa maiores harum sit id accusantium saepe, quam aliquid tempore a consectetur? At architecto a amet in aliquid.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rem molestiae repellendus ipsa maiores harum sit id accusantium saepe, quam aliquid tempore a consectetur? At architecto a amet in aliquid.</p>
+    <section class="mt nosotros">
+        <h1 class="nosotros__heading">Sobre Nosotros</h1>
+        <div class="nosotros__grid">
+            <div class="nosotros__imagen">
+                <picture>
+                    <source srcset="/build/img/nosotros.avif" type="image/avif">
+                    <source srcset="/build/img/nosotros.webp" type="image/webp">
+                    <img loading="lazy" src="/build/img/nosotros.jpg" alt="Imagen sobre nosotros">
+                </picture>
+            </div>
+            <div class="nosotros__texto">
+                <p class="nosotros__parrafo">
+                    Somos un grupo de amantes del café que se unieron con la idea de crear un espacio en línea donde las
+                    personas pudieran aprender más sobre esta bebida, desde su origen hasta los diferentes métodos de
+                    preparación. Nuestro objetivo es compartir nuestra experiencia y conocimiento para que otros puedan
+                    disfrutar de una taza de café perfecta en casa.
+                </p>
+                <p class="nosotros__parrafo">
+                    Nos encanta probar diferentes tipos de café y explorar nuevos sabores y aromas. Y <span class="nosotros__span">
+                        estamos
+                        comprometidos en brindar información precisa y actualizada sobre el mundo del café
+                    </span>, desde nuevas
+                    variedades hasta equipos y accesorios relacionados.
+                </p>
+                <p class="nosotros__parrafo">
+                    Estamos dedicados a crear un espacio en línea donde los amantes del café puedan aprender, compartir
+                    y disfrutar de esta deliciosa bebida juntos. ¡Gracias por visitar nuestro sitio y esperamos que
+                    disfrutes de todas las cosas que el mundo del café tiene para ofrecer!
+                </p>
+            </div>
+        </div>
     </section>
 
     <footer class="footer">
@@ -65,16 +89,17 @@
             <!-- <img src="/build/img/icon.svg" alt="Icono Blog Café" class="footer__imagen"> -->
             <h1 class="footer__heading">Blog<span class="footer__span">DeCafé</span></h1>
         </a>
-        <p class="footer__mensaje">Oprime en alguno de los siguientes iconos para seguirnos en nuestras resde sociales</p>
+        <p class="footer__mensaje">Oprime en alguno de los siguientes iconos para seguirnos en nuestras resde sociales
+        </p>
         <div class="footer__sociales">
             <a href="#">
-                <img src="/build/img/facebook.svg" alt="Boton facebook">
+                <img src="/build/img/facebook.svg" alt="Boton facebook" title="Facebook">
             </a>
             <a href="#">
-                <img src="/build/img/youtube.svg" alt="Boton youtube">
+                <img src="/build/img/youtube.svg" alt="Boton youtube" title="Youtube">
             </a>
             <a href="#">
-                <img src="/build/img/twitter.svg" alt="Boton twitter">
+                <img src="/build/img/twitter.svg" alt="Boton twitter" title="Twitter">
             </a>
         </div>
     </footer>

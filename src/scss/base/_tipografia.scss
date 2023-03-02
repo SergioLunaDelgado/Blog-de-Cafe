@@ -14,8 +14,10 @@ h2{
 
 [class$="__heading"] {
     font-family: v.$fuenteHeading;
+    text-align: center;
 }
 
 [class$="__span"] {
     color: v.$primario;
+    font-weight: v.$bold;
 }

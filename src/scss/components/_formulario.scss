@@ -1,0 +1,57 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.formulario {
+    @include m.tablet {
+        background-color: v.$blanco;
+        margin: -5rem auto 0 auto;
+        width: 95%;
+        padding: 5rem;
+    }
+
+    &__campo {
+        text-align: center;
+        margin: 1rem 0;
+
+        @include m.tablet {
+            display: flex;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__label {
+        font-weight: v.$bold;
+
+        @include m.tablet {
+            flex: 0 0 9rem;
+            padding-right: 2rem;
+            align-items: center;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    &__input {
+        width: 95%;
+        padding: 0.5rem;
+        margin: 1rem;
+
+        @include m.tablet {
+            flex: 1;
+            border: 1px solid lighten(v.$negro, 50%);
+        }
+    }
+
+    &__boton {
+        @include m.boton(v.$negro, v.$blanco);
+    }
+
+    &--centrar {
+        display: flex;
+        justify-content: center;
+
+        @include m.tablet {
+            justify-content: flex-start;
+        }
+    }
+}

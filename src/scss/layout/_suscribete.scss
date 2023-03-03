@@ -1,0 +1,21 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.suscribete {
+    @include m.contenedor-md;
+
+    &__descripcion {
+        text-align: center;
+    }
+
+    &__imagen {
+        background-image: image-set(url('/build/img/contacto.jpg') 1x, url('/build/img/contacto.webp') 1x);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20rem;
+
+        @include m.tablet {
+            height: 40rem;
+        }
+    }
+}

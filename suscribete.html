@@ -53,19 +53,33 @@
         </div>
     </div>
 
-    <section class="mt">
-        <h1>desde suscríbete</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rem molestiae repellendus ipsa maiores harum sit id accusantium saepe, quam aliquid tempore a consectetur? At architecto a amet in aliquid.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rem molestiae repellendus ipsa maiores harum sit id accusantium saepe, quam aliquid tempore a consectetur? At architecto a amet in aliquid.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rem molestiae repellendus ipsa maiores harum sit id accusantium saepe, quam aliquid tempore a consectetur? At architecto a amet in aliquid.</p>
-    </section>
+    <main class="mt suscribete">
+        <h1 class="suscribete__heading">¡Únete a nuestra comunidad de amantes del café totalmente gratis!</h1>
+        <p class="suscribete__descripcion">No te pierdas la oportunidad de estar al tanto de todas las cosas
+            relacionadas con el café y unirte a una comunidad de amantes del café apasionados como tú. ¡Ingresa tu
+            dirección de correo electrónico en nuestro formulario de suscripción ahora mismo!</p>
+        <div class="suscribete__imagen"></div> <!-- lo inserto desde scss -->
+        <form class="formulario" method="POST" name="suscripcion" data-netlify="true">
+            <div class="formulario__campo">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <input type="text" name="nombre" id="nombre" class="formulario__input" placeholder="Tu nombre" required>
+            </div>
+            <div class="formulario__campo">
+                <label for="correo" class="formulario__label">Correo</label>
+                <input type="email" name="correo" id="correo" class="formulario__input" placeholder="Tu correo" required>
+            </div>
+            <div class="formulario--centrar">
+                <input type="submit" value="Suscribirse" class="formulario__boton">
+            </div>
+        </form>
+    </main>
 
     <footer class="footer">
         <a href="/" class="footer__logo">
-            <!-- <img src="/build/img/icon.svg" alt="Icono Blog Café" class="footer__imagen"> -->
             <h1 class="footer__heading">Blog<span class="footer__span">DeCafé</span></h1>
         </a>
-        <p class="footer__mensaje">Oprime en alguno de los siguientes iconos para seguirnos en nuestras resde sociales</p>
+        <p class="footer__mensaje">Oprime en alguno de los siguientes iconos para seguirnos en nuestras resde sociales
+        </p>
         <div class="footer__sociales">
             <a href="#">
                 <img src="/build/img/facebook.svg" alt="Boton facebook" title="Facebook">

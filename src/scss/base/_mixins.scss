@@ -24,22 +24,16 @@
     background-color: $bgColor;
     padding: 1.5rem 4rem;
     color: $colorTexto;
-    font-size: 1.6rem;
+    text-transform: uppercase;
     display: inline-block;
     font-weight: 700;
     border: none;
-    transition-property: background-color;
-    transition-duration: .3s;
-    text-align: center;
-    display: block;
-    width: 100%;
-
+    
     @include tablet {
         width: auto;
     }
 
     &:hover {
-        background-color: darken($bgColor, 10%);
         cursor: pointer;
     }
 }
@@ -56,12 +50,12 @@
 }
 
 @mixin contenedor-md {
-    width: min(90%, 80rem);
+    width: min(90%, 100rem);
     margin: 0 auto;
 }
 
 @mixin contenedor-sm {
-    width: min(85%, 60rem);
+    width: min(85%, 80rem);
     margin: 0 auto;
 }
 

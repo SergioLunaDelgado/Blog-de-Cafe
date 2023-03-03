@@ -2,15 +2,12 @@
 @use 'base/mixins' as m;
 
 .nosotros {
+    @include m.contenedor;
+
     @include m.tablet {
         &__grid {
             @include m.grid(2, 3rem);
             align-items: center;
         }
-    }
-
-    &__parrafo {
-        line-height: 1.5;
-        text-align: justify;
     }
 }

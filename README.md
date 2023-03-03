@@ -24,14 +24,15 @@ Nuestro objetivo es proveer a los aficionados y expertos en el café una platafo
 * [ ] Formulario
 * [x] Footer
 ## Nosotros
-* [ ] Imagen | Información
+* [x] Imagen | Información
 ## Galeria
 * [ ] Fotos | Videos
 ## Blog
 * [ ] Entradas de post organizado por etiquetas
 ## Suscríbete
-* [ ] Formulario
+* [x] Formulario
 
 # Commits
 * 1/3/2023 = Header, Hero and Footer
 * 2/3/2023 = Nosotros
+* 3/3/2023 = Formulario

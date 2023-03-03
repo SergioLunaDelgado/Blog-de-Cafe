@@ -27,14 +27,19 @@ img {
     max-width: 100%;
 }
 
+p {
+    line-height: 1.5;
+    text-align: justify;
+}
+
 section {
     @include m.contenedor;
 }
 
 .mt {
-    margin-top: 25rem;
+    margin-top: 25rem !important;
 
     @include m.tablet {
-        margin-top: 18rem
+        margin-top: 18rem !important
     }
 }

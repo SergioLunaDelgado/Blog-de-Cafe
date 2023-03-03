@@ -1,0 +1,63 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.modal {
+    background-color: rgb(0 0 0 / .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+
+    &__form {
+        max-width: 60rem;
+        background-color: v.$blanco;
+        padding: 2rem;
+        margin: 0 auto;
+        border: 1rem;
+
+        transform: translateY(-30%);
+        transition-property: all !important;
+        transition-duration: 1000ms !important;
+        transition: ease-in-out;
+        opacity: 0;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__gif {
+        height: 20rem;
+        transform: scale(1.2);
+    }
+
+    &__heading {
+        margin: 2rem 0 0 0;
+    }
+
+    &__mensaje {
+        text-align: center
+    }
+
+    &__boton {
+        @include m.boton(v.$primario, v.$blanco);
+    }
+
+    /* desde js mando a llamar la clase */
+    &__animar {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 1;
+    }
+
+    /* desde js mando a llamar la clase */
+    &__cerrar {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+}

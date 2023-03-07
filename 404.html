@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlogDeCafé | Suscríbete</title>
+    <title>BlogDeCafé | Página no encontrada</title>
     <meta name="description"
         content="Nuestro objetivo es proveer a los aficionados y expertos en el café una plataforma en línea para aprender todo lo relacionado con el café">
     <link rel="icon" type="image/svg" href="/build/img/icon.svg">
@@ -17,6 +17,8 @@
     <!--CSS -->
     <link rel="preload" href="/build/css/app.css" as="style">
     <link rel="stylesheet" href="/build/css/app.css">
+    <!-- Cargar una imagen rapido -->
+    <!-- <link rel="preload" href="build/img/me.avif" as="image"> -->
 </head>
 
 <body>
@@ -34,7 +36,7 @@
             <a href="/nosotros.html" class="header__enlace">Nosotros</a>
             <a href="/galeria.html" class="header__enlace">Galería</a>
             <a href="/blog.html" class="header__enlace">Blog</a>
-            <a href="/suscribete.html" class="header__enlace header__enlace--actual">Suscríbete</a>
+            <a href="/suscribete.html" class="header__enlace">Suscríbete</a>
         </nav>
     </header>
 
@@ -47,37 +49,23 @@
             <a href="/nosotros.html" class="offcanva__enlace">Nosotros</a>
             <a href="/galeria.html" class="offcanva__enlace">Galería</a>
             <a href="/blog.html" class="offcanva__enlace">Blog</a>
-            <a href="/suscribete.html" class="offcanva__enlace offcanva__enlace--actual">Suscríbete</a>
+            <a href="/suscribete.html" class="offcanva__enlace">Suscríbete</a>
         </div>
     </div>
 
-    <main class="mt suscribete">
-        <h1 class="suscribete__heading">¡Únete a nuestra comunidad de amantes del café totalmente gratis!</h1>
-        <p class="suscribete__descripcion">No te pierdas la oportunidad de estar al tanto de todas las cosas
-            relacionadas con el café y unirte a una comunidad de amantes del café apasionados como tú. ¡Ingresa tu
-            dirección de correo electrónico en nuestro formulario de suscripción ahora mismo!</p>
-        <div class="suscribete__imagen"></div> <!-- lo inserto desde scss -->
-        <form class="formulario" method="POST" name="suscripcion" data-netlify="true">
-            <div class="formulario__campo">
-                <label for="nombre" class="formulario__label">Nombre</label>
-                <input type="text" name="nombre" id="nombre" class="formulario__input" placeholder="Tu nombre" required>
-            </div>
-            <div class="formulario__campo">
-                <label for="correo" class="formulario__label">Correo</label>
-                <input type="email" name="correo" id="correo" class="formulario__input" placeholder="Tu correo" required>
-            </div>
-            <div class="formulario--centrar">
-                <input type="submit" value="Suscribirse" class="formulario__boton">
-            </div>
-        </form>
-    </main>
+    <section class="mt error">
+        <h1 class="error__heading">No se pudo encontrar la página</h1>
+        <p class="error__descripcion">Es posible que la página que intenta buscar no exista o este fuera de servicio, <a href="/" class="error__span">puede regresar oprimiendo este enlace</a>.</p>
+        <div class="error__centrar">
+            <img src="/build/img/404.gif" alt="Gif de error">
+        </div>
+    </section>
 
     <footer class="footer">
         <a href="/" class="footer__logo">
             <h1 class="footer__heading">Blog<span class="footer__span">DeCafé</span></h1>
         </a>
-        <p class="footer__mensaje">Oprime en alguno de los siguientes iconos para seguirnos en nuestras resde sociales
-        </p>
+        <p class="footer__mensaje">Oprime en alguno de los siguientes iconos para seguirnos en nuestras resde sociales</p>
         <div class="footer__sociales">
             <a href="#">
                 <img src="/build/img/facebook.svg" alt="Boton facebook" title="Facebook">

@@ -14,11 +14,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
         rel="stylesheet">
+    <!-- CSS - Lightbox2 -->
+    <link rel="stylesheet" href="/build/css/lightbox.min.css" as="style">
     <!--CSS -->
     <link rel="preload" href="/build/css/app.css" as="style">
     <link rel="stylesheet" href="/build/css/app.css">
-    <!-- Cargar una imagen rapido -->
-    <!-- <link rel="preload" href="build/img/me.avif" as="image"> -->
 </head>
 
 <body>
@@ -53,11 +53,101 @@
         </div>
     </div>
 
-    <section class="mt">
-        <h1>desde galeria</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rem molestiae repellendus ipsa maiores harum sit id accusantium saepe, quam aliquid tempore a consectetur? At architecto a amet in aliquid.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rem molestiae repellendus ipsa maiores harum sit id accusantium saepe, quam aliquid tempore a consectetur? At architecto a amet in aliquid.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rem molestiae repellendus ipsa maiores harum sit id accusantium saepe, quam aliquid tempore a consectetur? At architecto a amet in aliquid.</p>
+    <section class="mt galeria">
+        <h1 class="galeria__heading">Descubre nuestra galería virtual de la cultura cafetera</h1>
+        <p class="galeria__descripcion">Da click en cualquier imagen para mirarla en tamaño completo</p>
+        <ul class="galeria__contenedor">
+            <li class="galeria__li">
+                <a data-lightbox="galeria" href="/build/img/blog1.jpg">
+                    <picture>
+                        <source srcset="/build/img/blog1.avif" type="image/avif">
+                        <source srcset="/build/img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/blog1.jpg" alt="Foto de la galeria">
+                    </picture>
+                </a>
+            </li>
+            <li class="galeria__li">
+                <a data-lightbox="galeria" href="/build/img/blog2.jpg">
+                    <picture>
+                        <source srcset="/build/img/blog2.avif" type="image/avif">
+                        <source srcset="/build/img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/blog2.jpg" alt="Foto de la galeria">
+                    </picture>
+                </a>
+            </li>
+            <li class="galeria__li">
+                <a data-lightbox="galeria" href="/build/img/blog3.jpg">
+                    <picture>
+                        <source srcset="/build/img/blog3.avif" type="image/avif">
+                        <source srcset="/build/img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/blog3.jpg" alt="Foto de la galeria">
+                    </picture>
+                </a>
+            </li>
+            <li class="galeria__li"> <!-- vertical -->
+                <a data-lightbox="galeria" href="/build/img/galeria2.jpg">
+                    <picture>
+                        <source srcset="/build/img/galeria2.avif" type="image/avif">
+                        <source srcset="/build/img/galeria2.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/galeria2.jpg" alt="Foto de la galeria">
+                    </picture>
+                </a>
+            </li>
+            <li class="galeria__li">
+                <a data-lightbox="galeria" href="/build/img/curso2.jpg">
+                    <picture>
+                        <source srcset="/build/img/curso2.avif" type="image/avif">
+                        <source srcset="/build/img/curso2.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/curso2.jpg" alt="Foto de la galeria">
+                    </picture>
+                </a>
+            </li>
+            <li class="galeria__li"> <!-- vertical -->
+                <a data-lightbox="galeria" href="/build/img/galeria3.jpg">
+                    <picture>
+                        <source srcset="/build/img/galeria3.avif" type="image/avif">
+                        <source srcset="/build/img/galeria3.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/galeria3.jpg" alt="Foto de la galeria">
+                    </picture>
+                </a>
+            </li>
+            <li class="galeria__li">
+                <a data-lightbox="galeria" href="/build/img/galeria1.jpg">
+                    <picture>
+                        <source srcset="/build/img/galeria1.avif" type="image/avif">
+                        <source srcset="/build/img/galeria1.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/galeria1.jpg" alt="Foto de la galeria">
+                    </picture>
+                </a>
+            </li>
+            <li class="galeria__li">
+                <a data-lightbox="galeria" href="/build/img/galeria4.jpg">
+                    <picture>
+                        <source srcset="/build/img/galeria4.avif" type="image/avif">
+                        <source srcset="/build/img/galeria4.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/galeria4.jpg" alt="Foto de la galeria">
+                    </picture>
+                </a>
+            </li>
+            <li class="galeria__li">
+                <a data-lightbox="galeria" href="/build/img/nosotros.jpg">
+                    <picture>
+                        <source srcset="/build/img/nosotros.avif" type="image/avif">
+                        <source srcset="/build/img/nosotros.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/nosotros.jpg" alt="Foto de la galeria">
+                    </picture>
+                </a>
+            </li>
+            <li class="galeria__li">
+                <a data-lightbox="galeria" href="/build/img/curso1.jpg">
+                    <picture>
+                        <source srcset="/build/img/curso1.avif" type="image/avif">
+                        <source srcset="/build/img/curso1.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/curso1.jpg" alt="Foto de la galeria">
+                    </picture>
+                </a>
+            </li>
+        </ul>
     </section>
 
     <footer class="footer">
@@ -78,6 +168,10 @@
         </div>
     </footer>
 
+    <!-- JS - jQuery -->
+    <script src="/build/js/jquery.min.js"></script>
+    <!-- JS - Lightbox2 -->
+    <script src="/build/js/lightbox.min.js"></script>
     <!-- JS -->
     <script src="/build/js/bundle.min.js" defer></script>
 </body>

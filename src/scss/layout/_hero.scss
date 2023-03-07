@@ -18,10 +18,6 @@
         color: v.$blanco;
         @include m.contenedor-md;
     }
-
-    &__descripcion {
-        text-align: center;
-    }
 }
 
 /* En este caso la imagen ya es oscura */

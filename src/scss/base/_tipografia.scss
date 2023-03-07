@@ -17,6 +17,10 @@ h2{
     text-align: center;
 }
 
+[class$="__descripcion"] {
+    text-align: center;
+}
+
 [class$="__span"] {
     color: v.$primario;
     font-weight: v.$bold;

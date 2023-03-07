@@ -1,0 +1,87 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.galeria {
+
+    /* contenedor general */
+    .galeria__contenedor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 300px);
+        /* ESTA GALERIA SOLO SE VE BIEN PARA 10 IMAGENES */
+        gap: 2rem;
+
+        @include m.desktop {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        img {
+            height: 300px;
+            width: 359.55px;
+            object-fit: cover;
+            transition: transform 300ms ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    /* contenedor individual */
+    &__li {
+        position: relative;
+        overflow: hidden;
+
+        &:nth-child(4) {
+            grid-column: 2/3;
+            grid-row: 2/4;
+        }
+
+        &:nth-child(8) {
+            grid-column: 1/2;
+            grid-row: 5/7;
+        }
+
+        &:nth-child(4) img,
+        &:nth-child(8) img {
+            height: 620px;
+        }
+
+        @include m.desktop {
+
+            /* Reseteo los valores de la columna */
+            &:nth-child(8) {
+                grid-column: auto;
+                grid-row: auto;
+            }
+
+            &:nth-child(8) img {
+                height: 300px;
+            }
+
+            &:nth-child(4) {
+                grid-column: 4/5;
+                grid-row: 1/3;
+            }
+
+            &:nth-child(6) {
+                grid-column: 2/3;
+                grid-row: 2/4;
+            }
+
+            &:nth-child(4) img,
+            &:nth-child(6) img {
+                height: 620px;
+            }
+        }
+    }
+}
+
+.lb-data .lb-close {
+    z-index: 1;
+}
+
+.lb-prev,
+.lb-next {
+    opacity: 1 !important;
+}

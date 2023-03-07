@@ -26,7 +26,7 @@ Nuestro objetivo es proveer a los aficionados y expertos en el café una platafo
 ## Nosotros
 * [x] Imagen | Información
 ## Galeria
-* [ ] Fotos | Videos
+* [x] Fotos
 ## Blog
 * [ ] Entradas de post organizado por etiquetas
 ## Suscríbete
@@ -36,3 +36,4 @@ Nuestro objetivo es proveer a los aficionados y expertos en el café una platafo
 * 1/3/2023 = Header, Hero and Footer
 * 2/3/2023 = Nosotros
 * 3/3/2023 = Formulario
+* 7/3/2023 = Galeria

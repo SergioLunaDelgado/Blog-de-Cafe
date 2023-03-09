@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
         rel="stylesheet">
+    <!-- CSS - AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--CSS -->
     <link rel="preload" href="/build/css/app.css" as="style">
     <link rel="stylesheet" href="/build/css/app.css">
@@ -56,22 +58,92 @@
     <div class="hero">
         <div class="hero__contenido">
             <h1 class="hero__heading">Blog de café con consejos y cursos</h1>
-            <p class="hero__descripcion">Sumérgete en el sabor del café</p>
+            <p class="hero__descripcion ml9">
+                <span class="text-wrapper">
+                    <span class="letters">Sumérgete en el sabor del café</span>
+                </span>
+            </p>
+            <!-- <p class="hero__descripcion">Sumérgete en el sabor del café</p> -->
         </div>
     </div>
 
-    <section>
-        <h1>desde index</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laborum repellat porro id maxime magni eum veniam sunt, itaque nobis excepturi officia, quam neque! Rem nobis quod maxime quibusdam eligendi!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laborum repellat porro id maxime magni eum veniam sunt, itaque nobis excepturi officia, quam neque! Rem nobis quod maxime quibusdam eligendi!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laborum repellat porro id maxime magni eum veniam sunt, itaque nobis excepturi officia, quam neque! Rem nobis quod maxime quibusdam eligendi!</p>
+    <section data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="mt-9 seccion">
+        <h1 class="seccion__heading">¡Bienvenidos a nuestra comunidad de amantes del café!</h1>
+        <p class="seccion__descripcion">En este sitio web, encontrarás todo lo que necesitas para disfrutar del mejor
+            café. Desde reseñas de las mejores cafeterías de tu ciudad, hasta tutoriales para preparar tu propio café en
+            casa como un verdadero barista. <span class="seccion__span">También compartimos las últimas noticias y
+                tendencias en el mundo del café</span>.
+            Únete a nuestra comunidad y descubre el maravilloso mundo del café con nosotros.</p>
+    </section>
+
+    <section data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="mt-9 seccion">
+        <h1 class="seccion__heading">Sobre BlogDeCafé</h1>
+        <div class="seccion__contenedor">
+            <picture>
+                <source srcset="/build/img/nosotros.avif" type="image/avif">
+                <source srcset="/build/img/nosotros.webp" type="image/webp">
+                <img loading="lazy" src="/build/img/nosotros.jpg" alt="Foto de inicio">
+            </picture>
+            <div class="">
+                <h2 class="seccion__titulo">¿Quiénes Somos?</h2>
+                <p class="seccion__texto">Somos un grupo de amantes del café que se unieron con la idea de crear un
+                    espacio en línea donde las personas pudieran aprender más sobre esta bebida, desde su origen hasta
+                    los diferentes métodos de preparación. Nuestro objetivo es compartir nuestra experiencia y
+                    conocimiento para que otros puedan disfrutar de una taza de café perfecta en casa.</p>
+                <a href="/nosotros.html" class="seccion__boton--negro">Conocer más</a>
+            </div>
+        </div>
+    </section>
+
+    <section data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="mt-9 seccion">
+        <h1 class="seccion__heading">Disfruta de nuestra galeria</h1>
+        <ul class="seccion__grid3">
+            <li class="seccion__picture">
+                <picture>
+                    <source srcset="/build/img/galeria1.avif" type="image/avif">
+                    <source srcset="/build/img/galeria1.webp" type="image/webp">
+                    <img loading="lazy" src="/build/img/galeria1.jpg" alt="Foto de la Galeria">
+                </picture>
+            </li>
+            <li class="seccion__picture">
+                <picture>
+                    <source srcset="/build/img/galeria2.avif" type="image/avif">
+                    <source srcset="/build/img/galeria2.webp" type="image/webp">
+                    <img loading="lazy" src="/build/img/galeria2.jpg" alt="Foto de la Galeria">
+                </picture>
+            </li>
+            <li class="seccion__picture">
+                <picture>
+                    <source srcset="/build/img/galeria3.avif" type="image/avif">
+                    <source srcset="/build/img/galeria3.webp" type="image/webp">
+                    <img loading="lazy" src="/build/img/galeria3.jpg" alt="Foto de la Galeria">
+                </picture>
+            </li>
+        </ul>
+        <a href="/galeria.html" class="seccion__boton--negro">Ver todo</a>
+    </section>
+
+    <section data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="mt-9 seccion">
+        <h1 class="seccion__heading">Noticias y Consejos para Amantes del Café</h1>
+        <div class="seccion__grid3">
+            <p class="__span">Proximamente...</p>
+        </div>
+        <a href="/blog.html" class="seccion__boton--negro">Leer más</a>
+    </section>
+
+    <section data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="mt-9 seccion">
+        <h1 class="seccion__heading">Se el primero en enterarte todo sobre el mundo del café</h1>
+        <div class="seccion__centrar">
+            <a href="/suscribete.html" class="seccion__boton--primario">Suscríbete Aquí</a>
+        </div>
     </section>
 
     <footer class="footer">
         <a href="/" class="footer__logo">
             <h1 class="footer__heading">Blog<span class="footer__span">DeCafé</span></h1>
         </a>
-        <p class="footer__mensaje">Oprime en alguno de los siguientes iconos para seguirnos en nuestras resde sociales</p>
+        <p class="footer__mensaje">Oprime en alguno de los siguientes iconos para seguirnos en nuestras resde sociales
+        </p>
         <div class="footer__sociales">
             <a href="#">
                 <img src="/build/img/facebook.svg" alt="Boton facebook" title="Facebook">
@@ -85,6 +157,13 @@
         </div>
     </footer>
 
+    <!-- JS - AnimeJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- JS - AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- JS -->
     <script src="/build/js/bundle.min.js" defer></script>
 </body>

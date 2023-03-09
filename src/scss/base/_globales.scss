@@ -40,10 +40,27 @@ section {
     @include m.contenedor;
 }
 
+[class$="__span"] {
+    color: v.$primario;
+    font-weight: v.$bold;
+}
+
+[class$="__boton--negro"] {
+    @include m.boton(v.$negro, v.$blanco);
+}
+
+[class$="__boton--primario"] {
+    @include m.boton(v.$primario, v.$blanco);
+}
+
 .mt {
     margin-top: 25rem !important;
 
     @include m.tablet {
         margin-top: 18rem !important
     }
+}
+
+.mt-9 {
+    margin-top: 9rem;
 }

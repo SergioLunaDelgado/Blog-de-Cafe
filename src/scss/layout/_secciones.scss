@@ -1,0 +1,81 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.seccion {
+    &__contenedor {
+        @include m.tablet {
+            @include m.grid(2, 2rem);
+            align-items: center;
+        }
+
+        &__titulo,
+        &__texto {
+            @include m.tablet {
+                text-align: justify !important;
+            }
+        }
+
+        &__titulo {
+            @include m.tablet {
+                margin-top: 0;
+            }
+        }
+
+        &__texto {
+            line-height: 2;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            /* cuantas lineas mostrar */
+            -webkit-box-orient: vertical; 
+            overflow: hidden;
+            /* oculta las demas lineas y al final agrega ... */
+        }
+
+        // &__centrar {
+        //     display: flex;
+        //     justify-content: center;
+    
+        //     @include m.tablet {
+        //         justify-content: flex-start;
+        //     }
+        // }
+    }
+
+    &__centrar {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__boton--negro {
+        margin-top: 2rem;
+    }
+
+    &__picture {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__grid3 {
+
+        @include m.grid(1, 2rem);
+
+        @include m.tablet {
+            @include m.grid(2, 2rem);
+        }
+
+        img {
+            height: 300px;
+            width: 359.55px;
+            object-fit: cover;
+            transition: transform 300ms ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        @include m.desktop {
+            @include m.grid(3, 2rem);
+        }
+    }
+}

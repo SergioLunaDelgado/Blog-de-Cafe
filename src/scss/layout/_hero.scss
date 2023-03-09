@@ -2,23 +2,53 @@
 @use 'base/mixins' as m;
 
 .hero {
-    background-image: image-set(url('/build/img/banner.jpg') 1x, url('/build/img/banner.webp') 1x);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  background-image: image-set(url('/build/img/banner.jpg') 1x, url('/build/img/banner.webp') 1x);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 
-    min-height: 100vh;
+  min-height: 100vh;
 
-    &__contenido {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        color: v.$blanco;
-        @include m.contenedor-md;
+  &__contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: v.$blanco;
+    @include m.contenedor-md;
+  }
+
+  &__descripcion {
+    text-align: center;
+
+    @include m.tablet {
+      font-size: 3.2rem;
+
     }
+  }
 }
 
 /* En este caso la imagen ya es oscura */
 // linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+
+.ml9 {
+  position: relative;
+  // font-weight: 200;
+  // font-size: 4em;
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}

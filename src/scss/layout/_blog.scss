@@ -1,0 +1,33 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.blog {
+    @include m.contenedor;
+
+    &__posts {
+        @include m.tablet {
+            @include m.grid(2, 3rem);
+        }
+    }
+
+    &__post {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__boton--negro {
+        margin-bottom: 3rem;
+        @include m.tablet {
+            margin-bottom: 0;
+        }
+    }
+
+    &__titulo {
+        margin: 0;
+    }
+}
+
+.entrada {
+    @include m.contenedor-md;
+}

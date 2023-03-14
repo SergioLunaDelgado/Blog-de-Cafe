@@ -21,16 +21,6 @@
             }
         }
 
-        &__texto {
-            line-height: 2;
-            display: -webkit-box;
-            -webkit-line-clamp: 5;
-            /* cuantas lineas mostrar */
-            -webkit-box-orient: vertical; 
-            overflow: hidden;
-            /* oculta las demas lineas y al final agrega ... */
-        }
-
         // &__centrar {
         //     display: flex;
         //     justify-content: center;
@@ -39,6 +29,16 @@
         //         justify-content: flex-start;
         //     }
         // }
+    }
+
+    &__texto {
+        line-height: 2;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        /* cuantas lineas mostrar */
+        -webkit-box-orient: vertical; 
+        overflow: hidden;
+        /* oculta las demas lineas y al final agrega ... */
     }
 
     &__centrar {

@@ -1,0 +1,37 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+    &__contenido {
+        display: none;
+        position: absolute;
+        background-color: v.$blanco;
+        min-width: 22rem;
+        @include m.shadow;
+        padding: 1rem;
+        z-index: 1;
+        top: 2rem;
+        right: 0;
+        text-align: justify;
+    }
+
+    &:hover &__contenido {
+        display: block;
+    }
+
+    &__enlace {
+        display: block;
+        margin-bottom: 1rem;
+        color: v.$negro;
+
+        &:hover {
+            color: v.$negro;
+            padding-left: 1rem;
+            border-left: 2px solid v.$primario;
+            transition: all 0.3s ease;
+        }
+    }
+}

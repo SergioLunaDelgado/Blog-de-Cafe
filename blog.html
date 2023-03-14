@@ -33,7 +33,16 @@
             <a href="/" class="header__enlace">Inicio</a>
             <a href="/nosotros.html" class="header__enlace">Nosotros</a>
             <a href="/galeria.html" class="header__enlace">Galería</a>
-            <a href="/blog.html" class="header__enlace header__enlace--actual">Blog</a>
+            <div class="dropdown dropdown--blog">
+                <a href="/blog.html" class="header__enlace header__enlace--actual">Blog&dtrif;</a>
+                <div class="dropdown__contenido">
+                    <a href="/blog.html#Noticias-y-tendencias" class="dropdown__enlace">Noticias y tendencias</a>
+                    <a href="/blog.html#Recetas-de-cafe" class="dropdown__enlace">Recetas de cafe</a>
+                    <a href="/blog.html#Salud-y-bienestar" class="dropdown__enlace">Salud y bienestar</a>
+                    <a href="/blog.html#Historia-y-origen" class="dropdown__enlace">Historia y origen</a>
+                    <a href="/blog.html#Cultivo-y-procesamiento" class="dropdown__enlace">Cultivo y procesamiento</a>
+                </div>
+            </div>
             <a href="/suscribete.html" class="header__enlace">Suscríbete</a>
         </nav>
     </header>
@@ -51,15 +60,178 @@
         </div>
     </div>
 
-    <section class="mt">
-        <h1 class="__span">Proximamente...</h1>
-    </section>
+    <main class="blog mt">
+
+        <span id="Noticias-y-tendencias"></span>
+        <h1 class="blog__heading">Blog</h1>
+
+        <article class="my-3">
+            <h2 class="blog__etiqueta">Noticias y tendencias</h2>
+            <ul class="blog__posts">
+                <li class="blog__post">
+                    <picture>
+                        <source srcset="/build/img/blog1.avif" type="image/avif">
+                        <source srcset="/build/img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/blog1.jpg" alt="Foto del Blog 1">
+                    </picture>
+                    <h2 class="blog__titulo">El auge de las cafeterías especializadas: ¿por qué los expertos en café prefieren estas tiendas?</h2>
+                    <!-- CAMBIAR EL PARRAFO -->
+                    <p class="blog__extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam saepe vitae nostrum dolores harum dignissimos esse? Fuga fugiat aperiam fugit quisquam consectetur, deleniti ipsum labore nesciunt quas, magnam expedita similique.</p>
+                    <div>
+                        <!-- CAMBIAR A LA RUTA CON EL NOMBRE DEL ARCHIVO QUE VALLAS A CREAR -->
+                        <a href="/blog/blog1.html" class="blog__boton--negro">Leer entrada</a>
+                    </div>
+                </li>
+                <!-- <li class="blog__post">
+                    <picture>
+                        <source srcset="/build/img/blog1.avif" type="image/avif">
+                        <source srcset="/build/img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/blog1.jpg" alt="Foto del Blog 1">
+                    </picture>
+                    <h2 class="blog__titulo">El auge de las cafeterías especializadas: ¿por qué los expertos en café prefieren estas tiendas?</h2>
+                    <p class="blog__extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam saepe vitae nostrum dolores harum dignissimos esse? Fuga fugiat aperiam fugit quisquam consectetur, deleniti ipsum labore nesciunt quas, magnam expedita similique.</p>
+                    <div>
+                        <a href="#" class="blog__boton--negro">Leer entrada</a>
+                    </div>
+                </li> -->
+            </ul>
+        </article>
+
+        <hr id="Recetas-de-cafe">
+
+        <article class="my-3">
+            <h2 class="blog__subtitulo">Recetas de café</h2>
+            <ul class="blog__posts">
+                <li class="blog__post">
+                    <picture>
+                        <source srcset="/build/img/blog1.avif" type="image/avif">
+                        <source srcset="/build/img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/blog1.jpg" alt="Foto del Blog 1">
+                    </picture>
+                    <h2 class="blog__titulo">El auge de las cafeterías especializadas: ¿por qué los expertos en café prefieren estas tiendas?</h2>
+                    <p class="blog__extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam saepe vitae nostrum dolores harum dignissimos esse? Fuga fugiat aperiam fugit quisquam consectetur, deleniti ipsum labore nesciunt quas, magnam expedita similique.</p>
+                    <div>
+                        <a href="#" class="blog__boton--negro">Leer entrada</a>
+                    </div>
+                </li>
+                <!-- <li class="blog__post">
+                    <picture>
+                        <source srcset="/build/img/blog1.avif" type="image/avif">
+                        <source srcset="/build/img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/blog1.jpg" alt="Foto del Blog 1">
+                    </picture>
+                    <h2 class="blog__titulo">El auge de las cafeterías especializadas: ¿por qué los expertos en café prefieren estas tiendas?</h2>
+                    <p class="blog__extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam saepe vitae nostrum dolores harum dignissimos esse? Fuga fugiat aperiam fugit quisquam consectetur, deleniti ipsum labore nesciunt quas, magnam expedita similique.</p>
+                    <div>
+                        <a href="#" class="blog__boton--negro">Leer entrada</a>
+                    </div>
+                </li> -->
+            </ul>
+        </article>
+
+        <hr id="Salud-y-bienestar">
+
+        <article class="my-3">
+            <h2 class="blog__subtitulo">Salud y bienestar</h2>
+            <ul class="blog__posts">
+                <li class="blog__post">
+                    <picture>
+                        <source srcset="/build/img/blog1.avif" type="image/avif">
+                        <source srcset="/build/img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/blog1.jpg" alt="Foto del Blog 1">
+                    </picture>
+                    <h2 class="blog__titulo">El auge de las cafeterías especializadas: ¿por qué los expertos en café prefieren estas tiendas?</h2>
+                    <p class="blog__extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam saepe vitae nostrum dolores harum dignissimos esse? Fuga fugiat aperiam fugit quisquam consectetur, deleniti ipsum labore nesciunt quas, magnam expedita similique.</p>
+                    <div>
+                        <a href="#" class="blog__boton--negro">Leer entrada</a>
+                    </div>
+                </li>
+                <!-- <li class="blog__post">
+                    <picture>
+                        <source srcset="/build/img/blog1.avif" type="image/avif">
+                        <source srcset="/build/img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/blog1.jpg" alt="Foto del Blog 1">
+                    </picture>
+                    <h2 class="blog__titulo">El auge de las cafeterías especializadas: ¿por qué los expertos en café prefieren estas tiendas?</h2>
+                    <p class="blog__extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam saepe vitae nostrum dolores harum dignissimos esse? Fuga fugiat aperiam fugit quisquam consectetur, deleniti ipsum labore nesciunt quas, magnam expedita similique.</p>
+                    <div>
+                        <a href="#" class="blog__boton--negro">Leer entrada</a>
+                    </div>
+                </li> -->
+            </ul>
+        </article>
+
+        <hr id="Historia-y-origen">
+
+        <article class="my-3">
+            <h2 class="blog__subtitulo">Historia y origen del café</h2>
+            <ul class="blog__posts">
+                <li class="blog__post">
+                    <picture>
+                        <source srcset="/build/img/blog1.avif" type="image/avif">
+                        <source srcset="/build/img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/blog1.jpg" alt="Foto del Blog 1">
+                    </picture>
+                    <h2 class="blog__titulo">El auge de las cafeterías especializadas: ¿por qué los expertos en café prefieren estas tiendas?</h2>
+                    <p class="blog__extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam saepe vitae nostrum dolores harum dignissimos esse? Fuga fugiat aperiam fugit quisquam consectetur, deleniti ipsum labore nesciunt quas, magnam expedita similique.</p>
+                    <div>
+                        <a href="#" class="blog__boton--negro">Leer entrada</a>
+                    </div>
+                </li>
+                <!-- <li class="blog__post">
+                    <picture>
+                        <source srcset="/build/img/blog1.avif" type="image/avif">
+                        <source srcset="/build/img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/blog1.jpg" alt="Foto del Blog 1">
+                    </picture>
+                    <h2 class="blog__titulo">El auge de las cafeterías especializadas: ¿por qué los expertos en café prefieren estas tiendas?</h2>
+                    <p class="blog__extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam saepe vitae nostrum dolores harum dignissimos esse? Fuga fugiat aperiam fugit quisquam consectetur, deleniti ipsum labore nesciunt quas, magnam expedita similique.</p>
+                    <div>
+                        <a href="#" class="blog__boton--negro">Leer entrada</a>
+                    </div>
+                </li> -->
+            </ul>
+        </article>
+
+        <hr id="Cultivo-y-procesamiento">
+
+        <article class="my-3">
+            <h2 class="blog__subtitulo">Cultivo y procesamiento del café</h2>
+            <ul class="blog__posts">
+                <li class="blog__post">
+                    <picture>
+                        <source srcset="/build/img/blog1.avif" type="image/avif">
+                        <source srcset="/build/img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/blog1.jpg" alt="Foto del Blog 1">
+                    </picture>
+                    <h2 class="blog__titulo">El auge de las cafeterías especializadas: ¿por qué los expertos en café prefieren estas tiendas?</h2>
+                    <p class="blog__extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam saepe vitae nostrum dolores harum dignissimos esse? Fuga fugiat aperiam fugit quisquam consectetur, deleniti ipsum labore nesciunt quas, magnam expedita similique.</p>
+                    <div>
+                        <a href="#" class="blog__boton--negro">Leer entrada</a>
+                    </div>
+                </li>
+                <!-- <li class="blog__post">
+                    <picture>
+                        <source srcset="/build/img/blog1.avif" type="image/avif">
+                        <source srcset="/build/img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="/build/img/blog1.jpg" alt="Foto del Blog 1">
+                    </picture>
+                    <h2 class="blog__titulo">El auge de las cafeterías especializadas: ¿por qué los expertos en café prefieren estas tiendas?</h2>
+                    <p class="blog__extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam saepe vitae nostrum dolores harum dignissimos esse? Fuga fugiat aperiam fugit quisquam consectetur, deleniti ipsum labore nesciunt quas, magnam expedita similique.</p>
+                    <div>
+                        <a href="#" class="blog__boton--negro">Leer entrada</a>
+                    </div>
+                </li> -->
+            </ul>
+        </article>        
+    </main>
 
     <footer class="footer">
         <a href="/" class="footer__logo">
             <h1 class="footer__heading">Blog<span class="footer__span">DeCafé</span></h1>
         </a>
-        <p class="footer__mensaje">Oprime en alguno de los siguientes iconos para seguirnos en nuestras resde sociales</p>
+        <p class="footer__mensaje">Oprime en alguno de los siguientes iconos para seguirnos en nuestras resde sociales
+        </p>
         <div class="footer__sociales">
             <a href="#">
                 <img src="/build/img/facebook.svg" alt="Boton facebook" title="Facebook">

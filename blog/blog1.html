@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogDeCafé | Blog</title>
+    <meta name="description"
+        content="Nuestro objetivo es proveer a los aficionados y expertos en el café una plataforma en línea para aprender todo lo relacionado con el café">
+    <link rel="icon" type="image/svg" href="/build/img/icon.svg">
+    <!-- Fuentes: Open Sans y PT Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!--CSS -->
+    <link rel="preload" href="/build/css/app.css" as="style">
+    <link rel="stylesheet" href="/build/css/app.css">
+</head>
+
+<body>
+
+    <header class="header header--dark">
+        <a href="/" class="header__logo">
+            <!-- <img src="/build/img/icon.svg" alt="Icono Blog Café" class="header__imagen"> -->
+            <h1 class="header__heading">Blog<span class="header__span">DeCafé</span></h1>
+        </a>
+        <div class="header__mobile">
+            <img src="/build/img/menu.svg" alt="Boton Menu" id="btnMenu">
+        </div>
+        <nav class="header__tablet">
+            <a href="/" class="header__enlace">Inicio</a>
+            <a href="/nosotros.html" class="header__enlace">Nosotros</a>
+            <a href="/galeria.html" class="header__enlace">Galería</a>
+            <div class="dropdown">
+                <a href="/blog.html" class="header__enlace">Blog&dtrif;</a>
+                <div class="dropdown__contenido">
+                    <a href="/blog.html#Noticias-y-tendencias" class="dropdown__enlace">Noticias y tendencias</a>
+                    <a href="/blog.html#Recetas-de-cafe" class="dropdown__enlace">Recetas de cafe</a>
+                    <a href="/blog.html#Salud-y-bienestar" class="dropdown__enlace">Salud y bienestar</a>
+                    <a href="/blog.html#Historia-y-origen" class="dropdown__enlace">Historia y origen</a>
+                    <a href="/blog.html#Cultivo-y-procesamiento" class="dropdown__enlace">Cultivo y procesamiento</a>
+                </div>
+            </div>
+            <a href="/suscribete.html" class="header__enlace">Suscríbete</a>
+        </nav>
+    </header>
+
+    <div class="offcanva">
+        <div class="offcanva__cerrar-menu">
+            <img src="/build/img/cerrar.svg" alt="Boton Cerrar" id="btnCerrar">
+        </div>
+        <div class="offcanva__contenedor">
+            <a href="/" class="offcanva__enlace">Inicio</a>
+            <a href="/nosotros.html" class="offcanva__enlace">Nosotros</a>
+            <a href="/galeria.html" class="offcanva__enlace">Galería</a>
+            <div class="dropdown">
+                <a href="/blog.html" class="header__enlace">Blog&dtrif;</a>
+                <div class="dropdown__contenido">
+                    <a href="/blog.html#Noticias-y-tendencias" class="dropdown__enlace">Noticias y tendencias</a>
+                    <a href="/blog.html#Recetas-de-cafe" class="dropdown__enlace">Recetas de cafe</a>
+                    <a href="/blog.html#Salud-y-bienestar" class="dropdown__enlace">Salud y bienestar</a>
+                    <a href="/blog.html#Historia-y-origen" class="dropdown__enlace">Historia y origen</a>
+                    <a href="/blog.html#Cultivo-y-procesamiento" class="dropdown__enlace">Cultivo y procesamiento</a>
+                </div>
+            </div>
+            <a href="/suscribete.html" class="offcanva__enlace">Suscríbete</a>
+        </div>
+    </div>
+
+    <!-- CAMBIAR -->
+    <main class="entrada mt">
+        <h1 class="entrada__heading">El auge de las cafeterías especializadas: ¿por qué los expertos en café prefieren
+            estas tiendas?</h1>
+        <picture>
+            <source srcset="/build/img/blog1.avif" type="image/avif">
+            <source srcset="/build/img/blog1.webp" type="image/webp">
+            <img loading="lazy" src="/build/img/blog1.jpg" alt="Foto del blog">
+        </picture>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis lectus sed ipsum scelerisque,
+            faucibus tristique magna sollicitudin. Proin ut ex sed felis placerat tempus. Proin dapibus porttitor magna
+            vel viverra. Vestibulum sit amet aliquet sapien. Sed commodo felis ac massa egestas auctor et sit amet
+            justo. Nunc eu ornare risus, finibus luctus elit. Nunc in nisl vitae libero molestie maximus. Mauris sed
+            vehicula augue. Duis sed tincidunt ligula, et placerat justo. Sed aliquam iaculis erat vel facilisis. Nam
+            suscipit vitae lacus ac finibus. Vestibulum est urna, sodales eget magna sed, rutrum tincidunt lectus. Nam
+            lobortis, arcu at aliquet rhoncus, est mauris convallis ligula, vel consequat risus nunc eleifend orci.
+        </p>
+        <p>
+            Nulla in diam quis mi tempus tristique a id sapien. Duis sit amet tellus at nibh ornare viverra at nec ex.
+            Sed scelerisque, massa quis molestie iaculis, purus diam eleifend neque, quis aliquet enim libero quis est.
+            Mauris ut pharetra justo. Maecenas sollicitudin volutpat lacus, at facilisis odio fringilla nec. Etiam in
+            sodales ante. Nunc id rhoncus risus. Etiam at massa in erat vestibulum viverra. Morbi eleifend sem sed
+            tempor blandit. Maecenas ultricies nibh at condimentum mattis. Suspendisse ex turpis, efficitur quis
+            molestie nec, pellentesque iaculis arcu. Donec consequat risus metus, non efficitur metus posuere vitae.
+            <span class="entrada__span">Aenean blandit sit amet sapien vel faucibus.</span>
+        </p>
+        <p>
+            Morbi vitae tincidunt nunc. In at justo facilisis, imperdiet justo sed, tempus nisl. Fusce condimentum elit
+            a vestibulum porta. Mauris convallis purus ut ornare mattis. Nulla volutpat semper leo ut aliquet. Donec nec
+            lacus ac arcu rhoncus tincidunt. Morbi viverra sodales tellus, sed tristique tellus gravida non. Maecenas
+            pretium neque sed ornare tincidunt. In rhoncus, magna et commodo tincidunt, tellus sem cursus est, at
+            interdum est nibh a turpis. Mauris luctus imperdiet elit et egestas. Maecenas laoreet elementum odio ut
+            vehicula. Nulla vitae ultrices odio. Etiam non nunc a ligula lacinia dignissim quis nec neque. Donec viverra
+            placerat nibh ut mollis.
+        </p>
+    </main>
+
+    <footer class="footer">
+        <a href="/" class="footer__logo">
+            <h1 class="footer__heading">Blog<span class="footer__span">DeCafé</span></h1>
+        </a>
+        <p class="footer__mensaje">Oprime en alguno de los siguientes iconos para seguirnos en nuestras resde sociales
+        </p>
+        <div class="footer__sociales">
+            <a href="#">
+                <img src="/build/img/facebook.svg" alt="Boton facebook" title="Facebook">
+            </a>
+            <a href="#">
+                <img src="/build/img/youtube.svg" alt="Boton youtube" title="Youtube">
+            </a>
+            <a href="#">
+                <img src="/build/img/twitter.svg" alt="Boton twitter" title="Twitter">
+            </a>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="/build/js/bundle.min.js" defer></script>
+</body>
+
+</html>

@@ -7,6 +7,7 @@ Nuestro objetivo es proveer a los aficionados y expertos en el café una platafo
     * Visual Studio Code
     * La extensión de Live Server (esto es dentro de vs code)
     * Node JS
+    * Git Bash
 2. Clonar el repositorio de git o descomprimir la carpeta con el proyecto
 3. Instalar las dependecias de npm con el siguiente comando: `npm install`
 ## Comandos de Gulp
@@ -19,7 +20,7 @@ Nuestro objetivo es proveer a los aficionados y expertos en el café una platafo
 * [x] Hero
 * [x] Bienvenida
 * [x] Galeria
-* [ ] Entradas del blog (solo 3)
+* [x] Entradas del blog (solo 2)
 * [x] Formulario
 * [x] Footer
 ## Nosotros
@@ -38,3 +39,5 @@ Nuestro objetivo es proveer a los aficionados y expertos en el café una platafo
 * 7/3/2023 = Galeria
 * 8/3/2023 = Inicio
 * 14/3/2023 = Blog - Post
+* 8/5/2023 = Cambios de info e imagenes
+* 8/5/2023 = Footer info

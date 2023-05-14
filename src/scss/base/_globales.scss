@@ -5,6 +5,7 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
     /* 10px = 1rem */
+    overflow-x: hidden;
 }
 
 *,
@@ -62,6 +63,10 @@ section {
 }
 
 .my-3 {
+    margin: 3rem 0;
+}
+
+.my-5 {
     margin: 3rem 0;
 }
 

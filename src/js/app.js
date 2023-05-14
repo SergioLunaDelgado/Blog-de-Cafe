@@ -4,10 +4,12 @@
         const header = document.querySelector('.header');
         const headerDark = document.querySelector('.header--dark');
 
+        /* Pagina de Inicio */
         if (header) {
             scroll > 500 ? header.classList.add('header--moved') : header.classList.remove('header--moved');
         }
 
+        /* Para las demas paginas */
         if (headerDark) {
             scroll > 10 ? headerDark.classList.add('header--moved') : headerDark.classList.remove('header--moved');
         }

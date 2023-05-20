@@ -44,3 +44,4 @@ Nuestro objetivo es proveer a los aficionados y expertos en el café una platafo
 * 8/5/2023 = Footer info
 * 14/5/2023 = Cambios sin redes sociales
 * 14/5/2023 = Ultimos detalles
+* 20/5/2023 = Leer entrada -> Leer mas
